@@ -31,7 +31,6 @@ def initial_round
   r 
 end
 
-
 def invalid_command
    puts("Please enter a valid command")
 end
@@ -43,8 +42,7 @@ def hit?( arg)
   if input_ == "s" # we don't deal a new card
     return player_current_total 
   end
-  # binding.pry
-  # player_current_total = initial_round
+  
   if input_ == "h" # we do need to deal a new
     new_card = deal_card.to_i
     player_current_total = player_current_total+new_card
